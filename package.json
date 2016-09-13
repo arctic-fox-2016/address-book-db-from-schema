@@ -12,5 +12,13 @@
     "bluebird": "^3.0.5",
     "q": "^1.4.1",
     "sqlite3": "^3.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arctic-fox-2016/address-book-db-from-schema.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arctic-fox-2016/address-book-db-from-schema/issues"
+  },
+  "homepage": "https://github.com/arctic-fox-2016/address-book-db-from-schema#readme"
 }
