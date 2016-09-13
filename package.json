@@ -11,6 +11,6 @@
   "dependencies": {
     "bluebird": "^3.0.5",
     "q": "^1.4.1",
-    "sqlite3": "*"
+    "sqlite3": "^3.1.4"
   }
 }
