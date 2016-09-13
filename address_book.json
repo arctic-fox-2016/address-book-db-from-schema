@@ -2,10 +2,12 @@
 	"firstname": "Peter",
 	"lastname": "Raswono",
 	"phone": "081324354657",
-	"email": "peter@gmail.com"
+	"email": "peter@gmail.com",
+	"address": "Jl Sudirman 1"
 }, {
 	"firstname": "Andrew",
 	"lastname": "Tandiawan",
 	"phone": "081234567890",
-	"email": "andrew@gmail.com"
+	"email": "andrew@gmail.com",
+	"address": "Jl Sudirman 1100"
 }]
