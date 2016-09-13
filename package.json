@@ -1,0 +1,16 @@
+{
+  "name": "address-book-db-from-schema-challenge",
+  "version": "0.0.1",
+  "description": "Address Book",
+  "main": "addressbook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rubi Henjaya",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "q": "^1.4.1",
+    "sqlite3": "*"
+  }
+}
