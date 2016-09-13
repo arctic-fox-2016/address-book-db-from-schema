@@ -37,10 +37,12 @@ class Contacts {
   }
 
   static removeGroup(groupName){
+    let REMOVE_GROUP_MEMBERS = `DELETE FROM group_members WHERE group_id IN ( SELECT id FROM groups WHERE groupname = '${groupName}' )`
     let REMOVE_GROUP = `DELETE FROM groups WHERE groupname = '${groupName}'`
-    let REMOVE_GROUP_MEMBERS = `DELETE FROM group_members WHERE groupname = '${groupName}'`
-    Contacts.runDbCommand(REMOVE_GROUP)
+
     Contacts.runDbCommand(REMOVE_GROUP_MEMBERS)
+    Contacts.runDbCommand(REMOVE_GROUP)
+
   }
 
   static addToGroup(group_id, member_id){
@@ -49,7 +51,8 @@ class Contacts {
   }
 
   static displayGroupMembers(){
-    // let DISPLAY_GROUP_MEMBERS = `SELECT *`
+    let DISPLAY_GROUP_MEMBERS = `SELECT groups.groupname, contacts.firstname, contacts.lastname FROM group_members INNER JOIN groups ON group_members.group_id = groups.id INNER JOIN contacts ON contacts.id = group_members.member_id`
+    Contacts.runDbAllCommand(DISPLAY_GROUP_MEMBERS)
   }
 
   static runDbCommand(command){
