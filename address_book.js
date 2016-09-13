@@ -43,9 +43,13 @@ class Contacts {
     Contacts.runDbCommand(REMOVE_GROUP_MEMBERS)
   }
 
-  static addToGroup(groupName, member_id){
-    let ADD_TO_GROUP = `INSERT INTO group_members (groupname, member_id) VALUES ('${groupName}', '${member_id}')`
+  static addToGroup(group_id, member_id){
+    let ADD_TO_GROUP = `INSERT INTO group_members (group_id, member_id) VALUES ('${group_id}', '${member_id}')`
     Contacts.runDbCommand(ADD_TO_GROUP)
+  }
+
+  static displayGroupMembers(){
+    // let DISPLAY_GROUP_MEMBERS = `SELECT *`
   }
 
   static runDbCommand(command){
