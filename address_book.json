@@ -1,0 +1,25 @@
+{
+	"contacts": [{
+		"firstname": "Ari",
+		"lastname": "Adiprana",
+		"phone": "081932377341",
+		"email": "ari@ari.com",
+		"address": "Ciledug Raya"
+	}, {
+		"firstname": "Ari",
+		"lastname": "Adepurana",
+		"phone": "081932377342",
+		"email": "adepurana@gmail.com",
+		"address": "Ciledug 2"
+	}],
+	"groups": [{
+		"groupname": "Friends"
+	}],
+	"group_members": [{
+		"group_id": 1,
+		"member_id": 1
+	}, {
+		"group_id": 1,
+		"member_id": 2
+	}]
+}
